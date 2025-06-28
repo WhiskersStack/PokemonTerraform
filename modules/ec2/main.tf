@@ -1,10 +1,10 @@
-variable "ami_id"               { type = string }
-variable "instance_type"        { type = string }
-variable "subnet_id"            { type = string }
-variable "sg_id"                { type = string }
-variable "key_name"             { type = string }
-variable "instance_profile"     { type = string }
-variable "instance_name_prefix" { type = string }
+# variable "ami_id"               { type = string }
+# variable "instance_type"        { type = string }
+# variable "subnet_id"            { type = string }
+# variable "sg_id"                { type = string }
+# variable "key_name"             { type = string }
+# variable "instance_profile"     { type = string }
+# variable "instance_name_prefix" { type = string }
 
 resource "aws_instance" "pokemon" {
   ami                    = var.ami_id
@@ -20,5 +20,5 @@ resource "aws_instance" "pokemon" {
   }
 }
 
-output "public_ip" { value = aws_instance.pokemon.public_ip }
-output "id"        { value = aws_instance.pokemon.id }
+# output "public_ip" { value = aws_instance.pokemon.public_ip }
+# output "id"        { value = aws_instance.pokemon.id }

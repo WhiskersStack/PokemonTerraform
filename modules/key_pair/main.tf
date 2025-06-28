@@ -3,6 +3,6 @@ resource "aws_key_pair" "this" {
   public_key = file(var.public_key_path)
 }
 
-output "name" {
-  value = aws_key_pair.this.key_name
-}
+# output "name" {
+#   value = aws_key_pair.this.key_name
+# }

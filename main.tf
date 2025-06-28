@@ -66,5 +66,5 @@ module "ec2" {
   instance_name_prefix = var.instance_name_prefix
 }
 
-output "instance_ip" { value = module.ec2.public_ip }
-output "table_name"  { value = module.dynamodb.name }
+# output "instance_ip" { value = module.ec2.public_ip }
+# output "table_name"  { value = module.dynamodb.name }

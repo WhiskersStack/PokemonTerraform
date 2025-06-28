@@ -1,4 +1,4 @@
-variable "profile_name" { type = string }
+# variable "profile_name" { type = string }
 
 data "aws_iam_policy_document" "ec2" {
   statement {
@@ -21,4 +21,4 @@ resource "aws_iam_instance_profile" "this" {
   role = aws_iam_role.ec2.name
 }
 
-output "instance_profile_name" { value = aws_iam_instance_profile.this.name }
+# output "instance_profile_name" { value = aws_iam_instance_profile.this.name }

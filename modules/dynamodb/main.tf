@@ -1,4 +1,4 @@
-variable "table_name" { type = string }
+# variable "table_name" { type = string }
 
 resource "aws_dynamodb_table" "pokemon" {
   name           = var.table_name
@@ -21,4 +21,4 @@ resource "null_resource" "seed" {
   triggers = { table = aws_dynamodb_table.pokemon.name }
 }
 
-output "name" { value = aws_dynamodb_table.pokemon.name }
+# output "name" { value = aws_dynamodb_table.pokemon.name }

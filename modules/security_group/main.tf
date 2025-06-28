@@ -1,4 +1,4 @@
-variable "vpc_id" { type = string }
+# variable "vpc_id" { type = string }
 
 resource "aws_security_group" "ssh_only" {
   name        = "pokemon_ssh"
@@ -20,4 +20,4 @@ resource "aws_security_group" "ssh_only" {
   }
 }
 
-output "id" { value = aws_security_group.ssh_only.id }
+# output "id" { value = aws_security_group.ssh_only.id }
