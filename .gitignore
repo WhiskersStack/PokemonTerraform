@@ -1,0 +1,4 @@
+.terraform/providers/registry.terraform.io/hashicorp/aws/6.0.0/linux_amd64/terraform-provider-aws_v6.0.0_x5
+.terraform/providers/registry.terraform.io/hashicorp/aws/6.0.0/linux_amd64/LICENSE.txt
+.terraform/modules/modules.json
+.terraform.lock.hcl
