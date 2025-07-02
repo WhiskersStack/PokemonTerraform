@@ -11,12 +11,12 @@ variable "instance_type" {
 variable "key_name" {
   description = "The name of the key pair to use for SSH access"
   type        = string
-  #   default     = "MyKeyPair" # Example key pair name, replace with your own
+  default     = "MyKeyPair" # Example key pair name, replace with your own
 }
 variable "tags" {
   description = "Tags to apply to the instance"
   type        = map(string)
   default     = {
-    Name = "PokemonGame1" # Default tag, can be overridden
+    Name = "PokemonGame2" # Default tag, can be overridden
   }
 }

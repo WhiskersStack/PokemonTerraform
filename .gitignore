@@ -9,3 +9,4 @@ modules/key/MyKeyPair.pem
 .terraform/providers/registry.terraform.io/hashicorp/local/2.5.3/linux_amd64/LICENSE.txt
 terraform.tfstate.backup
 terraform.tfstate
+modules/ec2/MyKeyPair.pem

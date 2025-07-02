@@ -10,6 +10,6 @@ resource "aws_key_pair" "my_key" {
 
 resource "local_file" "private_key" {
   content         = tls_private_key.key.private_key_pem
-  filename        = "${path.module}/MyKeyPair.pem"
+  filename        = "${path.module}/../ec2/MyKeyPair.pem"
   file_permission = "0400"
 }
