@@ -1,0 +1,20 @@
+variable "ami" {
+  description = "The AMI to use for the instance"
+  type        = string
+  default     = "ami-075686beab831bb7f" # Example AMI ID, replace with your own
+}
+variable "instance_type" {
+  description = "The type of instance to create"
+  type        = string
+  default     = "t2.micro" # Example instance type, replace with your own
+}
+variable "key_name" {
+  description = "The name of the key pair to use for SSH access"
+  type        = string
+  default     = "MyKeyPair" # Example key pair name, replace with your own
+}
+# variable "security_groups" {
+#   description = "List of security group IDs to associate with the instance"
+#   type        = list(string)
+#   default     = [] # Default to an empty list if no security groups are specified
+# }
