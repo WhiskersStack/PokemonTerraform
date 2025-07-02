@@ -2,3 +2,10 @@
 .terraform/providers/registry.terraform.io/hashicorp/aws/6.0.0/linux_amd64/LICENSE.txt
 .terraform/modules/modules.json
 .terraform.lock.hcl
+modules/key/MyKeyPair.pem
+.terraform/providers/registry.terraform.io/hashicorp/tls/4.1.0/linux_amd64/terraform-provider-tls_v4.1.0_x5
+.terraform/providers/registry.terraform.io/hashicorp/tls/4.1.0/linux_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/local/2.5.3/linux_amd64/terraform-provider-local_v2.5.3_x5
+.terraform/providers/registry.terraform.io/hashicorp/local/2.5.3/linux_amd64/LICENSE.txt
+terraform.tfstate.backup
+terraform.tfstate
