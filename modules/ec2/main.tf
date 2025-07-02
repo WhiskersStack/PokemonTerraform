@@ -3,6 +3,7 @@ resource "aws_instance" "pokemon_game" {
   instance_type          = var.instance_type
   key_name               = var.key_name
   vpc_security_group_ids = var.vpc_security_group_ids
+  iam_instance_profile   = "LabInstanceProfile" # Attach existing profile here
 
   user_data = <<-EOF
     #!/bin/bash
@@ -13,6 +14,6 @@ resource "aws_instance" "pokemon_game" {
   EOF
 
   tags = {
-    Name = "qwe"
+    Name = "test"
   }
 }
