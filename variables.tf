@@ -8,13 +8,11 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro" # Example instance type, replace with your own
 }
-# variable "key_name" {
-#   description = "The name of the key pair to use for SSH access"
-#   type        = string
-#   default     = "MyKeyPair" # Example key pair name, replace with your own
+# variable "tags" {
+#   description = "Tags to apply to the instance"
+#   type        = map(string)
+#   default = {
+#     Name = "PokemonGame" # Default tag, can be overridden
+#   }
 # }
-# variable "security_groups" {
-#   description = "List of security group IDs to associate with the instance"
-#   type        = list(string)
-#   default     = [] # Default to an empty list if no security groups are specified
-# }
+

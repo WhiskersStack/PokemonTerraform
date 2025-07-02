@@ -1,7 +1,8 @@
 resource "aws_instance" "pokemon_game" {
-  ami           = var.ami
-  instance_type = var.instance_type
-  key_name      = var.key_name
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = var.key_name
+  vpc_security_group_ids = var.vpc_security_group_ids
 
   user_data = <<-EOF
     #!/bin/bash
@@ -12,6 +13,6 @@ resource "aws_instance" "pokemon_game" {
   EOF
 
   tags = {
-    Name = var.tags["Name"]
+    Name = "qwe"
   }
 }
