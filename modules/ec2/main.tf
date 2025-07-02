@@ -14,6 +14,6 @@ resource "aws_instance" "pokemon_game" {
   EOF
 
   tags = {
-    Name = "test"
+    Name = "final"
   }
 }
